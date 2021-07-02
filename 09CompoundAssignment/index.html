@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 80%;
+        }
+        
+        td, th {
+          border: 2px solid ;
+          text-align: center;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: lightskyblue;
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Compound Assignment</h1>
+    <table>
+        <tr>
+            <th>Assignment</th>
+            <th>รูปแบบการเขียน</th>
+            <th>ความหมาย</th>
+        </tr>
+        <tr>
+            <td>+=</td>
+            <td>x += y</td>
+            <td>x = x + y</td>
+        </tr>
+        <tr>
+            <td>-=</td>
+            <td>x -= y</td>
+            <td>x = x - y</td>
+        </tr>
+        <tr>
+            <td>*=</td>
+            <td>x *= y</td>
+            <td>x = x * y</td>
+        </tr>
+        <tr>
+            <td>/=</td>
+            <td>x /= y</td>
+            <td>x = x / y</td>
+        </tr>
+        <tr>
+            <td>%=</td>
+            <td>x %= y</td>
+            <td>x = x % y</td>
+        </tr>
+    </table><hr>
+    <h1>ลำดับความสำคัญของตัวดำเนินการ</h1>
+    <table>
+        <tr>
+            <th>ลำดับที่</th>
+            <th>เครื่องหมาย</th>
+            <th>ลำดับการทำงาน</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>()</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>++ , --</td>
+            <td>ซ้ายไปขวา</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>* , / , %</td>
+            <td>ซ้ายไปขวา</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>+ , -</td>
+            <td>ซ้ายไปขวา</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>< , <= , > , >=</td>
+            <td>ซ้ายไปขวา</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>== , !=</td>
+            <td>ซ้ายไปขวา</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>&&</td>
+            <td>ซ้ายไปขวา</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>||</td>
+            <td>ซ้ายไปขวา</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>= , += , -= , *= , /= ,%=</td>
+            <td>ขวาไปซ้าย</td>
+        </tr>
+    </table>
+</body>
+</html>

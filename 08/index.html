@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 80%;
+        }
+        
+        td, th {
+          border: 2px solid ;
+          text-align: center;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: lightskyblue;
+        }
+    </style>
+    <script src="./app.js"></script>
+</head>
+<body>
+    <h1>ตัวดำเนินการเพิ่มค่า - ลดค่า</h1>
+    <table>
+        <tr>
+            <th>Operator</th>
+            <th>รูปแบบการเขียน</th>
+            <th>ความหมาย</th>
+        </tr>
+        <tr>
+            <td>++(Prefix)</td>
+            <td>++a</td>
+            <td>เพิ่มค่าให้ a ก่อน 1 ค่าแล้วนำไปใช้</td>
+        </tr>
+        <tr>
+            <td>++(Postfix)</td>
+            <td>a++</td>
+            <td>นำค่าปัจจุบันใน a ไปใช้ก่อนแล้วค่อยเพิ่มค่า</td>
+        </tr>
+        <tr>
+            <td>--(Prefix)</td>
+            <td>--b</td>
+            <td>ลดค่าให้ b ก่อน 1 ค่าแล้วนำไปใช้งาน</td>
+        </tr>
+        <tr>
+            <td>--(Postfix)</td>
+            <td>b--</td>
+            <td>นำค่าปัจจุบันใน b ไปใช้ก่อนแล้วค่อยลดค่า</td>
+        </tr>
+    </table>
+</body>
+</html>
