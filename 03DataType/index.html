@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <h1>Data Type</h1>
+    <table>
+       <tr>
+           <th>Data Type</th>
+           <th>คำอธิบาย</th>
+           <th>รูปแบบข้อมูล</th>
+       </tr>
+       <tr>
+            <td>boolean</td>
+            <td>ค่าทางตรรกศาสตร์</td>
+            <td>true / false</td>
+       </tr>
+       <tr>
+            <td>number</td>
+            <td>ตัวเลขที่ไม่มีจุดทศนิยม</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>ตัวเลขที่มีจุดทศนิยม</td>
+            <td>30.15</td>
+        </tr>
+        <tr>
+            <td>string</td>
+            <td>ข้อความ</td>
+            <td>"Hello"</td>
+        </tr>
+        <tr>
+            <td>object</td>
+            <td>ข้อมูลเชิงวัตถุ</td>
+            <td>{firstName : "Artitaya",lastName : "Yaemjaraen"}</td>
+        </tr>
+        <tr>
+            <td>array</td>
+            <td>ชุดข้อมูล</td>
+            <td>["A","B","C"]</td>
+        </tr>
+    </table>
+    <h3>หัวข้อที่เกี่ยวข้องกับตัวแปร</h3>
+    <li>typeof คือ ตรวจสอบชนิดข้อมูล</li>
+    <li>null คือ ไม่มีการกำหนดค่า ,ว่างเปล่า</li>
+    <li>underined คือ ไม่มีการกำหนดค่า (ค่าเริ่มต้น)</li><hr>
+    <h3>การเปลี่ยนแปลงชนิดข้อมูล (Type Conversion)</h3>
+    <h5>แปลงจาก String เป็น Number</h5>
+    <ul>
+        <li>x = parseInt('1.2');</li>
+        <li>x = parseFloat('1.2');</li>
+        <li>ใช้เครื่องหมาย (+...) เพิ่มไปข้างหน้า</li>
+    </ul>
+    <h5>แปลงจาก Number เป็น String</h5>
+    <ul>
+        <li>ใช้เครื่องหมาย "" + ตัวแปร หรือ ค่าที่เป็นตัวเลข</li>
+        <li>ใช้ toString() เช่น x.toString()</li>
+    </ul>
+</body>
+</html>
