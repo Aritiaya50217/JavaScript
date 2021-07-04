@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .flex-container {
+            display: flex;
+            background-color: lightgray ;
+            padding: 3px;
+            border:2px solid black;
+            border-radius: 15px;
+            margin: 1%;
+        }
+        .box1{
+            width: 450px;
+            position: absolute;
+        }
+        .box2{
+            width: 450px;
+            position: absolute;
+            margin-left: 60%;
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>แบบมีเงื่อนไข (Condition)</h1>
+    <p>กลุ่มคำสั่งที่ใช้ตัดสินใจใจการเลือกเงื่อนไขต่าง ๆ ภายในโปรแกรมมาทำงาน</p>
+    <li>Switch...Case
+    <p>Switch เป็นคำสั่งที่ใช้กำหนดเงื่อนไขคล้าย ๆ กับ if แต่จะเลือกเพียงหนึ่งทางเลือกออกมาทำงานโดยนำค่าในตัวแปรมากำหนดเป็นทางเลือกผ่านคำสั่ง case</p>
+    </li><hr>
+    <h3>รูปแบบคำสั่ง</h3>
+    <p>switch (สิ่งที่ต้องการตรวจสอบ) { <br>&nbsp;&nbsp;&nbsp;case ค่าที่ 1 : คำสั่งที่ 1 ; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break ; <br>&nbsp;&nbsp;&nbsp;case ค่าที่ 2 : คำสั่งที่ 2 ; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break ; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..............<br>&nbsp;&nbsp;&nbsp;case ค่าที่ N : คำสั่งที่ N ; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break ;<br>&nbsp;&nbsp;&nbsp;default : คำสั่งเมื่อไม่มีค่าที่ตรงกับที่ระบุใน case <br> }</p>
+    <p style="color: red;"><b>*** break จะทำให้โปรแกรมกระโดดออกไปทำงานนอกคำสั่ง switch ถ้าไม่มีคำสั่ง break โปรแกรมจะทำคำสั่งต่อไปเรื่อย ๆ จนจบการทำงาน</b></p>
+    <h4>ตัวอย่าง</h4>
+    <p>switch (month) { <br>&nbsp;&nbsp;&nbsp;case 1 : console.log("มกราคม") ; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break ; <br>&nbsp;&nbsp;&nbsp;case 2 :console.log("กุมภาพันธ์") ; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break ; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..............<br>&nbsp;&nbsp;&nbsp;case ค่าที่ N : คำสั่งที่ N ; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break ;<br>&nbsp;&nbsp;&nbsp;default :console.log("ไม่พบเดือน") ;<br> }<hr>
+    <h1>Switch...Case VS if Statement</h1>
+    <div class="flex-container box1">
+        <p>switch (month) { <br>&nbsp;&nbsp;&nbsp;case 1 : console.log("มกราคม") ; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break ; <br>&nbsp;&nbsp;&nbsp;case 2 :console.log("กุมภาพันธ์") ; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break ; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..............<br>&nbsp;&nbsp;&nbsp;case ค่าที่ N : คำสั่งที่ N ; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break ;<br>&nbsp;&nbsp;&nbsp;default :console.log("ไม่พบเดือน") ;<br> }
+    </div>
+    <div class="flex-container box2">
+        <p>if (month == 1) { <br>
+        &nbsp;&nbsp;&nbsp; console.log("มกราคม");<br>
+        }else if (month == 2) {<br>
+        &nbsp;&nbsp;&nbsp; console.log("กุมภาพันธ์") ; <br>}else if (เงื่อนไขที่ 3) {<br>&nbsp;&nbsp;&nbsp;คำสั่งเมื่อเงื่อนไขที่ 3 เป็นจริง ; <br>}else { <br>
+        &nbsp;&nbsp;&nbsp; System.out.println("ไม่พบเดือน");<br>}
+        </p>
+    </div>
+    
+</body>
+</html>
