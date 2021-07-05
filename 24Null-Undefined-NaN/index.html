@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container {
+            display:inline-block;
+            border: gray solid 5px;
+            border-radius: 15px;
+            padding: 3px;
+            font-size: 1.3rem;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>ค่า null,undefined และ NaN</h1>
+    <p>null คือ ตัวแปรที่ไม่มีค่าใด ๆ เลย ไม่เท่ากับ 0 และไม่เท่ากับตริงว่าง ไม่สามารถนำไปคำนวณใดๆ ได้ แต่หากนำไปเปรียบเทียบด้วยเงื่อนไขจะมีค่าเท่ากับค่า false</p>
+    <div class="container">
+        <p>let a = null ; <br> if (!a) { <br>&nbsp;&nbsp;&nbsp;alert (" a is null ");<br>} else { <br>&nbsp;&nbsp;&nbsp;alert (" a is not null ") ;<br>}</p>
+    </div><hr>
+    <p>undefined คือ ตัวแปรที่ประกาศเอาไว้แต่ไม่ได้กำหนดค่าใด ๆ ให้กับมัน ยกตัวอย่าง เช่น</p>
+    <div class="container">
+        <p>let a ; <br> alert(a) ;</p>
+    </div><hr>
+    <p>NaN (Not a Number) คือ การนำตัวแปรที่ไม่ใช่ตัวเลขไปคำนวณทางคณิตศาสตร์</p>
+    <div class="container">
+        <p>let a = 10 ;<br>let b = "x" ; <br>alert(10-b) ;</p>
+    </div>
+    
+</body>
+</html>
