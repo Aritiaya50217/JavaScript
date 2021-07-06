@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>เรียงลำดับใน Array</h1>
+    <li>let fruits = ["orange","mango"];</li>
+    <li>fruits.sort();</li>
+    <li>fruits.reverse();</li>
+    <hr>
+    <h3>เรียงลำดับใน Array แบบตัวเลข จากน้อยไปมาก</h3>
+    <p>let point = [20,100,-100,5,-25,10] ;</p>
+    <p>points.sort(function(a,b){<br>
+    &nbsp;&nbsp;&nbsp;return a - b <br>
+    });</p>
+    <p><b>a คือ ค่าตัวเลขที่มีค่าลบจะถูกเรียงก่อน</b></p>
+    <p><b>b คือ ค่าตัวเลขที่มีค่าบวกจะถูกเรียงทีหลัง</b></p><hr>
+    <h3>เรียงลำดับใน Array แบบตัวเลข จากมากไปน้อย</h3>
+    <p>let point = [20,100,-100,5,-25,10] ;</p>
+    <p>point.sort(function(a,b) { <br>
+    &nbsp;&nbsp;&nbsp;return b - a <br>
+    });</p>
+    <p><b>b คือ ค่าตัวเลขที่มีค่าบวกจะถูกเรียงก่อน</b></p>
+    <p><b>a คือ ค่าตัวเลขที่มีค่าลบจะถูกเรียงทีหลัง</b></p>
+</body>
+</html>

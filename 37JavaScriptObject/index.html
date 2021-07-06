@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>JavaScript Object</h1>
+    <p>let ชื่อวัตถุ = { propertyName: value } เช่น</p>
+    <p>let user = { <br>&nbsp;&nbsp;&nbsp;name: "Artitaya",age:23 <br> };</p>
+    <p>let product = { name:"mango", price:150 };</p><hr>
+    <h3>การเข้าถึงข้อมูล</h3>
+    <p>objectName.propertyName <br> objectName["propertyName"] เช่น</p>
+    <ul>user.name <br> user["name"]</ul><hr>
+    <h3>ความแตกต่างของ Array and Object</h3>
+    <li>Array มี index เป็นตัวเลข ส่วน Object กำหนดเป็นชื่อ</li>
+    <li>Array ใช้ [] ส่วน Object ใช้ {}</li><hr>
+    <h1>JavaScript Object (Method)</h1>
+    <p>let user = { <br>
+    &nbsp;&nbsp;&nbsp;name : "Artitaya", <br>&nbsp;&nbsp;&nbsp;age : 23,<br>&nbsp;&nbsp;&nbsp;getUser : function() { <br>
+    &nbsp;&nbsp;&nbsp;return this.name + "" + this.age ; <br>&nbsp;&nbsp;&nbsp;}<br>};</p>
+    <h3>การเรียกใช้งาน</h3>
+    <p>objectName.methodName() ; <br>
+    let data = user.getUser() ;</p>
+</body>
+</html>
