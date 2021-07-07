@@ -1,0 +1,13 @@
+.test {
+    color: blue;
+    background-color: black;
+}
+.light{
+   background-color: orange;
+   border-radius:10px ;
+}
+.dark{
+    background-color: gray;
+    color: white;
+    border-radius:10px ;
+}

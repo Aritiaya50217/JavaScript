@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="welcome()">
+    <h1>DOM Event</h1>
+    <p>&nbsp;&nbsp;&nbsp;คือ เหตุการณ์หรือการกระทำบางอย่างที่เกิดขึ้นกับ element เช่น การคลิกเมาส์ การเคลื่อนย้ายเมาส์ การกดปุ่มคีย์บอร์ด <br>โดยผู้พัฒนาสามารถใช event ที่เกิดขึ้นเป็นตัวกำหนดให้ตอสนอง หรือ กระทำบางอย่างได้ เช่น การคลิกแล้วแจ้งเตือน เป็นต้น</p>
+    <table>
+        <tr>
+            <th>ชื่อ Event</th>
+            <th>ความหมาย</th>
+            <th>ทำงานร่วมกับแท็ก</th>
+        </tr>
+        <tr>
+            <td>onfocus = " "</td>
+            <td>เมื่อ element ได้รับการ focus</td>
+            <td>select , text , textarea</td>
+        </tr>
+        <tr>
+            <td>onblur = " "</td>
+            <td>เมื่อ element นั้นสูญเสียการ focus หรือ ถูกย้าย focus ไปยัง element อื่น</td>
+            <td>select , text , textarea</td>
+        </tr>
+        <tr>
+            <td>onchange = " "</td>
+            <td>เมื่อผู้ใช้เปลี่ยนแปลงค่าในฟอร์มรับข้อมูล</td>
+            <td>select , text , textarea</td>
+        </tr>
+        <tr>
+            <td>onselect = " "</td>
+            <td>เมื่อผู้ใช้เลือกข้อความ (ใช้เมาส์ลาก) ในช่องข้อความ</td>
+            <td>text , textarea</td>
+        </tr>
+        <tr>
+            <td>onsubmit = " "</td>
+            <td>เมื่อผู้ใช้คลิกปุ่ม submit</td>
+            <td>form</td>
+        </tr>
+        <tr>
+            <td>onMouseover = " "</td>
+            <td>เกิดเมื่อ object นั้นถูกเลื่อน mouse pointer ไปทับ</td>
+            <td>a , div</td>
+        </tr>
+        <tr>
+            <td>onMouseout = " "</td>
+            <td>เกิดเมื่อ objact นั้นถูกเลื่อน mouse pointer ที่ทับอยู่นั้นออกไป</td>
+            <td>a , div</td>
+        </tr>
+        <tr>
+            <td>onclick = " "</td>
+            <td>เกิดเมื่อ object นั้นถูกคลิก</td>
+            <td>a , button , checkbox ,radio , reset , submit</td>
+        </tr>
+        <tr>
+            <td>onload = " "</td>
+            <td>เกิดเมื่อโหลดเอกสารเสร็จ (รีเฟรช)</td>
+            <td>body</td>
+        </tr>
+        <tr>
+            <td>onunload = " "</td>
+            <td>เกิดเมื่อยกเลิกการโหลด เช่น คลิกปุ่ม Stop</td>
+            <td>body</td>
+        </tr>
+    </table><hr>
+    <h1 align="center">Test</h1>
+    <div id="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur mollitia similique cupiditate. Incidunt corrupti obcaecati temporibus dolore voluptas nihil repellat accusamus, quis eaque corporis minus similique doloremque veniam. Dolorum.</p>
+    </div>
+    <label for="">ชื่อ :</label>
+    <!-- function(this) ใช้ this เพราะ function ทีการกำหนด parameter -->
+    <input type="text" placeholder="ชื่อของคุณ" onfocus="hightlight(this)" onblur="unhightlight(this)"><br>
+    <label for="">ที่อยู่ :</label><br>
+    <textarea name="" id="" cols="30" rows="10" onfocus="hightlight(this)" onblur="unhightlight(this)"></textarea><br>
+    <label for="">ภาษา:</label>
+    <select name="" id="language" onchange="getLanguage()">
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Golang">Golang</option>
+    </select>
+    <p id="display"></p><hr>
+    <!-- function(this) ใช้ this เพราะ function ทีการกำหนด parameter -->
+    <a href="" onmouseover="hightlight2(this)" onmouseout="unhightlight2(this)">Mouse 1</a>
+    <a href="" onmouseover="hightlight2(this)" onmouseout="unhightlight2(this)">Mouse 2</a>
+    <script src="./app.js"></script>
+</body>
+</html>

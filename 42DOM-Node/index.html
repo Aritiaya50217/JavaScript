@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"></link>
+   
+</head>
+<body>
+    <h1>DOM Nodes</h1>
+    <li>document.createElement(element) // สร้าง element ใหม่</li>
+    <li>document.removeChild(element) // ลบ node ลูก</li>
+    <li>document.appendChild(element) // นำ element ไปต่อใน node แม่</li>
+    <li>document.replaceChild(new,old) แทนที่ element</li><hr>
+    <h1 align="center">Test</h1>
+    <p>Hello</p>
+    <p>Js</p>
+    <p>Python</p>
+    <p>Python3.9</p>
+    <ul id="menu">
+        <li id="item1">A</li>
+        <li id="item2">B</li>
+        <li id="item3">C</li>
+    </ul>
+    <button onclick="addItem()">เพิ่ม</button>
+    <button onclick="deleteItem()">ลบ</button>
+    <button onclick="replaceItem()">แทนที่</button>
+
+    <script src="app.js "></script>
+</body>
+</html>

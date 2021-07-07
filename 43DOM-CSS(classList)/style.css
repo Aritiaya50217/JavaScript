@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+.darkMode{
+    border: 2px solid silver;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin : 10px;
+}
+.lightMode{
+    border: 2px solid blue;
+    background-color: lightblue;
+    color: black;
+    padding: 20px;
+    margin : 10px;
+}
